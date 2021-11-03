@@ -34,6 +34,7 @@ RUN a2enmod auth_cas && \
     a2enmod proxy_http && \
     a2enmod remoteip && \
     a2enmod ssl && \
+    a2enmod rewrite && \
     a2ensite default && \
     a2dissite 000-default
 
