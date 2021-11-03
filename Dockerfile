@@ -38,5 +38,6 @@ RUN a2enmod auth_cas && \
     a2dissite 000-default
 
 EXPOSE 80
+EXPOSE 443
 
 CMD ["/usr/sbin/apachectl", "-d", "/etc/apache2", "-f", "apache2.conf", "-e", "info", "-DFOREGROUND"]
